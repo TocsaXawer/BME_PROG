@@ -1,0 +1,26 @@
+AMÍG végig nem értél a versenyzők listáján, ISMÉTELD
+	v '$\leftarrow$' a következő versenyző;
+	AMÍG végig nem értél a v-hez tartozó időkön,ISMÉTELD
+		ia '$\leftarrow$' a következő időadat;
+		sum '$\leftarrow$' 0;
+		n '$\leftarrow$' 0;
+	
+		HA ia egy köridő
+			sum '$\leftarrow$' sum + az ia-ban tárolt érték;
+			n '$\leftarrow$' n + 1;
+		
+	v átlagos körideje '$\leftarrow$' sum/n
+
+lassu '$\leftarrow$' az első versenyző;
+max '$\leftarrow$' lassú első körideje; //ez több lépés...
+AMÍG végig nem értél a versenyzők listáján, ISMÉTELD
+	v '$\leftarrow$' a következő versenyző;
+
+	AMÍG végig nem értél a v-hez tartozó időkön,ISMÉTELD
+		ia '$\leftarrow$' a következő időadat;
+	
+		HA ia egy köridő ÉS az ia-ban tárolt érték > max
+			max '$\leftarrow$' az ia-ban tárolt érték;
+			lassu '$\leftarrow$' v;
+
+A válasz: lassu átlagos körideje

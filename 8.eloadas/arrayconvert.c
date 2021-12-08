@@ -1,0 +1,3 @@
+char a[3][2];
+...
+print_array(@(char *)a@, 3, 2); /* 3 sor 2 oszlop */
