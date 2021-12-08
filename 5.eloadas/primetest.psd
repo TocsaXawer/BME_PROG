@@ -1,0 +1,9 @@
+BE: low, high
+MINDEN i-re low-tól high-ig
+	HA prímteszt(i) IGAZ
+		KI: i
+
+MINDEN i-re 2-től p gyökéig
+	HA i osztja p-t
+		return HAMIS
+return IGAZ
